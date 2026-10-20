@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div id = "app">
+        <h1>Lista produktów</h1>
+
+            <label for = "AddInputField">Dodaj produkt:</label>
+            <input type = "text" id = "AddNameField" placeholder="Nazwa produktu"/>
+            <input type = "text" id = "AddDescField" placeholder="opis produktu"/>
+            <br>
+            <br>
+            <label>Skrót:</label>
+            <br>
+
+            <label>sektor:</label>
+            <input type = "number" id = "ShortcutValueA"/>
+            <label>regał:</label>
+            <input type = "number" id = "ShortcutValueB"/>
+            <label>półka:</label>
+            <input type = "number" id = "ShortcutValueC"/>
+            <button type = "button" id="AddButton">Dodaj</button>
+
+            <br>
+            <br>
+
+            <label for = "SearchInputField">Znajdź produkt</label>
+            <select id = "SearchMode">
+                <option value="EAN">kod EAN</option>
+                <option value="nazwa">nazwa</option>
+                <option value="shortcut">Skrót</option>
+            </select>
+            <input type = "text" id = "SearchInputField"/>
+            <button type = "button" id="SearchButton">Szukaj</button>
+
+        <div id = "Container"></div>
+    </div>
+    <script src = "public/main.js" defer></script>
+</body>
+</html>
